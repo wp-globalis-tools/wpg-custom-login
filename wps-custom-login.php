@@ -29,7 +29,6 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 		 * Register hooks used by the plugin
 		 */
 		public static function hooks() {
-			add_action( 'init', array( __CLASS__, 'init' ) );
 			add_action( 'login_head', array( __CLASS__, 'custom_login_css' ), 10 );
 			add_filter( 'login_headerurl', array( __CLASS__, 'custom_login_header_url' ), 10, 1 );
 			add_filter( 'login_headertitle', array( __CLASS__, 'custom_login_header_title' ), 10, 1 );
@@ -41,6 +40,7 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 		public static function custom_login_css() {
 			$logo_url = get_stylesheet_directory_uri() . '/logo.png';
 			$logo_path = get_stylesheet_directory() . '/logo.png';
+			$output = '';
 
 			if( file_exists( $logo_path ) ) {
 				$output .= '<style>.login h1 a {
