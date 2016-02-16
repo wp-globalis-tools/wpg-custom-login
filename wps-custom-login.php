@@ -40,6 +40,12 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 		public static function custom_login_css() {
 			$logo_url = get_stylesheet_directory_uri() . '/logo.png';
 			$logo_path = get_stylesheet_directory() . '/logo.png';
+
+			if( ! file_exists( $logo_path ) ) {
+				$logo_url = get_stylesheet_directory_uri() . '/logo.jpg';
+				$logo_path = get_stylesheet_directory() . '/logo.jpg';
+			}
+
 			$output = '';
 
 			if( file_exists( $logo_path ) ) {
