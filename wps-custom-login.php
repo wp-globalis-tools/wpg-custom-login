@@ -49,25 +49,22 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 			$output = '';
 
 			if( file_exists( $logo_path ) ) {
-				$output .= '<style>.login h1 a {
-					background-image: url(' . $logo_url . ');
-				  	background-position: center top;
-				  	background-repeat: no-repeat;
-				  	background-size: auto;
-				  	color: #999;
-				  	font-size: 20px;
-				  	font-weight: normal;
-				  	line-height: 1.3em;
-				  	margin: 0 auto 10px;
-				  	padding: 0;
-				  	text-decoration: none;
-				  	text-indent: -9999px;
-				  	outline: none;
-				  	overflow: hidden;
-				  	display: block;
-				  	width: auto;
-				  	min-height: 84px;
-				}
+				$output .= '
+				<style>
+					.login h1 {
+						background-image: url(' . $logo_url . ');
+				  		background-position: center top;
+				  		background-repeat: no-repeat;
+					    background-size: contain;
+    					width: 100%;
+    					height: 100%;
+					}
+					.login h1 a {
+							background-image: none;
+							display: block;
+							width: 100%;
+							min-height: 100px;
+						}
 				</style>';
 			}
 
