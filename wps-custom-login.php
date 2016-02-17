@@ -60,11 +60,14 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
     					height: 100%;
 					}
 					.login h1 a {
-							background-image: none;
-							display: block;
-							width: 100%;
-							min-height: 100px;
+						background-image: none;
+						display: block;
+						width: 100%;
+						min-height: 100px;
 						}
+					.login .message {
+						margin-top: 20px;
+					}
 				</style>';
 			}
 
