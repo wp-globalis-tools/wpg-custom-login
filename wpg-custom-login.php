@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:         WPS Custom Login
- * Plugin URI:          https://github.com/wp-stack/wps-custom-login
+ * Plugin Name:         WPG Custom Login
+ * Plugin URI:          https://github.com/wp-globalis-tools/wpg-custom-login
  * Description:         Customize your wp-login.php page with project logo and title
  * Author:              Pierre Dargham, Matthieu Guerry, Globalis Media Systems
  * Author URI:          https://www.globalis-ms.com
@@ -16,12 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
+if ( ! class_exists( 'WPG_CUSTOM_LOGIN' ) ) {
 
 	/**
 	 * Main class of the plugin
 	 */
-	class WPS_CUSTOM_LOGIN {
+	class WPG_CUSTOM_LOGIN {
 
 		const VERSION = '1.0.0';
 
@@ -71,7 +71,7 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 				</style>';
 			}
 
-			echo apply_filters( 'wps_custom_login_css', $output );
+			echo apply_filters( 'wpg_custom_login_css', $output );
 		}
 
 		/**
@@ -89,5 +89,5 @@ if ( ! class_exists( 'WPS_CUSTOM_LOGIN' ) ) {
 		}
 	}
 
-	WPS_CUSTOM_LOGIN::hooks();
+	WPG_CUSTOM_LOGIN::hooks();
 }
