@@ -6,7 +6,7 @@
  * Author:              Pierre Dargham, Matthieu Guerry, Globalis Media Systems
  * Author URI:          https://www.globalis-ms.com
  *
- * Version:             1.0.0
+ * Version:             0.2.0
  * Requires at least:   4.0.0
  * Tested up to:        4.4.2
  */
