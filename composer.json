@@ -1,16 +1,26 @@
 {
-    "name": "globalis/wpg-custom-login",
-    "description": "Customize your wp-login.php page with project logo and title",
-    "type": "wordpress-plugin",
-    "homepage": "https://github.com/wp-globalis-tools/wpg-custom-login",
-		"authors": [
-			{
-				"name": "Pierre Dargham",
-				"homepage": "https://github.com/pierre-dargham/"
-			},
-			{
-				"name": "GLOBALIS media systems",
-				"homepage": "https://www.globalis-ms.com/"
-			}
-		]
+    "name":"globalis/wpg-custom-login",
+    "type":"wordpress-plugin",
+    "license":"GPL-2.0",
+    "description":"Customize your wp-login.php page with project logo and title",
+    "homepage":"https://github.com/wp-globalis-tools/wpg-custom-login",
+    "authors":[
+        {
+            "name":"Pierre Dargham",
+            "homepage":"https://github.com/pierre-dargham/"
+        },
+        {
+            "name":"GLOBALIS media systems",
+            "homepage":"https://www.globalis-ms.com/"
+        }
+   ],
+   "keywords":[
+        "wordpress"
+   ],
+   "support":{
+        "issues":"https://github.com/wp-globalis-tools/wpg-custom-login/issues"
+   },
+   "require":{
+        "php":">=5.5"
+   }
 }
